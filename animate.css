@@ -1,0 +1,74 @@
+
+
+.animate, .animate:after {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+	padding: 0;
+}
+
+.animate:after {
+	content: '';
+}
+
+.animate ul {
+	list-style-type: none;
+}
+
+.animate li span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: transparent;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: none;
+	opacity: 0;
+	z-index: 1;
+	animation: coverAnimate 18s steps(4) 1;
+
+}
+
+.animate li:nth-child(1) span {
+	background-image: url('images/native1.png');
+}
+.animate li:nth-child(2) span {
+	background-image: url('images/native2.png');
+	animation-delay: 3s;
+	animation-duration: 12s;
+}
+.animate li:nth-child(3) span {
+	background-image: url('images/native3.png');
+	animation-delay: 6s;
+	animation-duration: 9s;
+}
+.animate li:nth-child(4) span {
+	background-image: url('images/native4.png');
+	animation-delay: 9s;
+	animation-duration: 6s;
+}
+.animate li:nth-child(5) span {
+	background-image: url('images/native5.png');
+	animation-delay: 12s;
+	animation-duration: 3s;
+}
+.animate li:nth-child(6) span {
+	background-image: url('images/native6.png');
+	animation-delay: 15s;
+	animation-duration: 1s;
+}
+
+
+@keyframes coverAnimate {
+	0% { opacity: 0; }
+	17% { opacity: 1;  }
+	40% { opacity: 1; }
+	60% { opacity: 1; }
+	80% { opacity: 0; }
+	100% { opacity: 1;  }
+}
