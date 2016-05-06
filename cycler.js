@@ -1,6 +1,6 @@
 function cycleImages() {
-    var $active = $('#cycler .active');
-    var $next = ($('#cycler .active').next().length > 0) ? $('#cycler .active').next() : $('#cycler img:first');
+    var $active = $('#nd-cycler .active');
+    var $next = ($('#nd-cycler .active').next().length > 0) ? $('#nd-cycler .active').next() : $('#nd-cycler img:first');
     $next.css('z-index', 2);
     $active.fadeOut(1500, function () {
         $active.css('z-index', 1).show().removeClass('active');
@@ -9,6 +9,6 @@ function cycleImages() {
 }
 
 $(document).ready(function () {
-    $('#cycler').fadeIn(1500);
-    setInterval('cycleImages()', 5000);
+    $('#nd-cycler').fadeIn(1000);
+    setInterval('cycleImages()', 4000);
 })
