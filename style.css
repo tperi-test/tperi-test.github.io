@@ -1,0 +1,43 @@
+#cycler {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+}
+
+#cycler img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    color: transparent;
+
+}
+
+#cycler img.active {
+    z-index: 3
+}
+
+
+@font-face {
+    font-family: 'Assassin';
+    src: url('fonts/assassin/Assassin.ttf.woff') format('woff'),
+    url('fonts/assassin/Assassin.ttf.svg#Assassin') format('svg'),
+    url('fonts/assassin/Assassin.ttf.eot'),
+    url('fonts/assassin/Assassin.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: Assassin;
+    font-size: 48px;
+    color: red;
+    background: url(image/bg_A.jpg);
+    background-clip: text;
+    text-fill-color: transparent;
+}
