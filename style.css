@@ -1,4 +1,4 @@
-#cycler {
+#nd-cycler {
     padding: 0;
     margin: 0;
     width: 200%;
@@ -9,7 +9,7 @@
     z-index: -1;
 }
 
-#cycler img {
+#nd-cycler img {
     z-index: 1;
     color: transparent;
 
@@ -24,8 +24,12 @@
 
 }
 
-#cycler img.active {
+#nd-cycler img.active {
     z-index: 3
+}
+
+#nd-text {
+
 }
 
 
