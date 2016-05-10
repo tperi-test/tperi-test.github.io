@@ -1,0 +1,36 @@
+
+.animate li span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: transparent;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: none;
+	opacity: 0;
+	z-index: 1;
+	animation: coverAnimate 18s steps(4) 1;
+
+}
+
+.animate li:nth-child(1) span {
+	background-image: url('images/bg_A.jpg');
+}
+.animate li:nth-child(2) span {
+	background-image: url('images/bg_E.jpg');
+	animation-delay: 3s;
+}
+.animate li:nth-child(3) span {
+	background-image: url('images/bg_I.jpg');
+	animation-delay: 6s;
+}
+
+
+@keyframes coverAnimate {
+	0% { opacity: 0; }
+	33% { opacity: 1;  }
+	66% { opacity: 1; }
+	100% { opacity: 1;  }
+}

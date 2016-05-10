@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Native Design | Splash Page Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="cycler.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="hidden">
+    <script type="text/javascript">
+
+        var images = new Array()
+
+        function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+                images[i] = new Image();
+                images[i].src = preload.arguments[i]
+            }
+        }
+
+        preload(
+                "images/bgN_letter_light.png",
+                "images/bgA_letter_light.png",
+                "images/bgT_letter_light.png",
+                "images/bgI_letter_light.png",
+                "images/bgV_letter_light.png",
+                "images/bgE_letter_light.png"
+        )
+
+    </script>
+</div>
+
+<div id="nd-cycler">
+
+    <script type="text/javascript">
+        $('#nd-cycler').hide();
+    </script>
+
+    <img class="active" src="images/bgN_letter_light.png" alt=""/>
+    <img src="images/bgA_letter_light.png" alt=""/>
+    <img src="images/bgT_letter_light.png" alt=""/>
+    <img src="images/bgI_letter_light.png" alt=""/>
+    <img src="images/bgV_letter_light.png" alt=""/>
+    <img src="images/bgE_letter_light.png" alt=""/>
+    <img src="images/bgtitle.png" alt=""/>
+    <img src="images/bgtitlecaption.png" alt=""/>
+    <img src="images/intro1.png" alt=""/>
+    <img src="images/intro2.png" id="end" alt=""/>
+
+</div>
+
+<div id="nd-text">
+    <h1>
+        <div class="nd-msg"></div>
+    </h1>
+</div>
+
+</body>
+</html>

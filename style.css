@@ -7,12 +7,12 @@
     top: -50%;
     left: -50%;
     z-index: -1;
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url('images/bgA_full.png');
 }
 
 #nd-cycler img {
     z-index: 1;
     color: transparent;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -28,11 +28,37 @@
     z-index: 3
 }
 
-#nd-text {
+#nd-cycler img.active {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url('images/bgA_full.png')
+}
 
+.nd-msg {
+    visibility: hidden;
+    color: white;
 }
 
 
+h1 {
+    font-family: Icomoon;
+    font-size: 12vw;
+    font-weight: normal;
+    margin: 0 auto;
+    /* Note: background rule ends with ", white" ! None supporting browsers get white bg */
+    background: url(images/bgN_full.png) repeat 0 0, white;
+    color: #FF8C00; /* non webkit browsers */
+    -webkit-background-clip: text; /* Webkit clips H1 background to text */
+    -webkit-text-fill-color: transparent;  /* Webkit text color */
+}
+
+h2 {
+    font-family: Icomoon;
+    font-size: 1.5rem;
+}
+
+/* Register Assassin font */
 @font-face {
     font-family: 'Assassin';
     src: url('fonts/assassin/Assassin.ttf.woff') format('woff'),
@@ -40,14 +66,16 @@
     url('fonts/assassin/Assassin.ttf.eot'),
     url('fonts/assassin/Assassin.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
+    font-style: oblique;
+}
+
+/* Register Icomoon font */
+@font-face {
+    font-family: 'Icomoon';
+    src: url('fonts/icomoon/icomoon.woff') format('woff'),
+    url('fonts/icomoon/icomoon.svg#Assassin') format('svg'),
+    url('fonts/icomoon/icomoon.eot') format('eot');
+    font-weight: normal;
     font-style: normal;
 }
 
-h1 {
-    font-family: Assassin;
-    font-size: 48px;
-    color: red;
-    background: url(image/bg_A.jpg);
-    background-clip: text;
-    text-fill-color: transparent;
-}
