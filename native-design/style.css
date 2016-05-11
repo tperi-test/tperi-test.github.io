@@ -1,0 +1,87 @@
+body {
+    color: black;
+}
+
+#nd-cycler {
+    padding: 0;
+    margin: 0;
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#nd-cycler img {
+    z-index: 1;
+    color: transparent;
+    position: absolute;
+    top: 5%;
+    left: -2.5%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width:50%;
+    min-height:50%;
+    transform: scale(0.75);
+}
+
+#nd-cycler img.active {
+    z-index: 3
+}
+
+#nd-text {
+    position: relative;
+    top: 50%;
+    transform: translateX(-1%) translateY(150%) scale(0.5);
+    text-align: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-family: Icomoon;
+    font-size: 12vw;
+    font-weight: normal;
+    margin: 0 auto;
+    /* Note: background rule ends with ", white" ! None supporting browsers get white bg */
+    background: url(images/bgs/bg-t.jpg) repeat 50% 50%, white;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FF8C00; /* non webkit browsers */
+    -webkit-background-clip: text; /* Webkit clips H1 background to text */
+    -webkit-text-fill-color: transparent;  /* Webkit text color */
+}
+
+h2 {
+    font-family: Icomoon;
+    font-size: 1.5rem;
+}
+
+/* Register Assassin font */
+@font-face {
+    font-family: 'Assassin';
+    src: url('fonts/assassin/Assassin.ttf.woff') format('woff'),
+    url('fonts/assassin/Assassin.ttf.svg#Assassin') format('svg'),
+    url('fonts/assassin/Assassin.ttf.eot'),
+    url('fonts/assassin/Assassin.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+/* Register Icomoon font */
+@font-face {
+    font-family: 'Icomoon';
+    src: url('fonts/icomoon/icomoon.woff') format('woff'),
+    url('fonts/icomoon/icomoon.svg#Assassin') format('svg'),
+    url('fonts/icomoon/icomoon.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
