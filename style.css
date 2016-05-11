@@ -45,24 +45,25 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+/*
 h1 {
     font-family: Icomoon;
     font-size: 12vw;
     font-weight: normal;
     margin: 0 auto;
-    /* Note: background rule ends with ", white" ! None supporting browsers get white bg */
     background: url(images/bgs/bg-t.jpg) repeat 50% 50%, white;
     background-size: cover;
     background-attachment: fixed;
-    color: #FF8C00; /* non webkit browsers */
-    -webkit-background-clip: text; /* Webkit clips H1 background to text */
-    -webkit-text-fill-color: transparent;  /* Webkit text color */
+    color: #FF8C00;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 h2 {
     font-family: Icomoon;
     font-size: 1.5rem;
 }
+*/
 
 /* Register Assassin font */
 @font-face {
