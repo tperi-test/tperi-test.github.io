@@ -11,11 +11,24 @@ function cycleImages() {
     });
     $end.stop();
 }
+function cycleBackground() {
+    var $div = $('#nd-cycler');
+    var $image = new Array [
+        "images/bg/bg-n.jpg",
+        "images/bg/bg-a.jpg"
+    ];
+    $div.fadeOut($timer, function () {
+       $div.css('background') 
+    });
+    
+}
 
 $(document).ready(function () {
     $('#nd-cycler').fadeIn($timer);
     setInterval('cycleImages()', $timer);
 });
+
+/*
 
 $(function () {
     var string = "NATIVE";
@@ -32,3 +45,5 @@ $(function () {
         if (c >= q.length) clearInterval(i);
     }, $timer);
 });
+
+    */

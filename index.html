@@ -6,16 +6,79 @@
     <script src="cycler.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body bgcolor="#696969">
-<center>
-<div>
+<body>
 
-    <h2>Select One:</h2>
+<div class="hidden">
+    <script type="text/javascript">
 
-    <a href="dark_index.html"><h2>Dark Background Animation</h2></a><br/>
-    <a href="light_index.html"><h2>Light Background Animation</h2></a><br/>
+        var images = new Array()
+
+        function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+                images[i] = new Image();
+                images[i].src = preload.arguments[i]
+            }
+        }
+        /*
+        preload(
+                "images/bgN_letter.png",
+                "images/bgA_letter.png",
+                "images/bgT_letter.png",
+                "images/bgI_letter.png",
+                "images/bgV_letter.png",
+                "images/bgE_letter.png"
+        )
+
+        preload(
+                "images/bgs/bg-n.jpg",
+                "images/bgs/bg-a.jpg",
+                "images/bgs/bg-t.jpg",
+                "images/bgs/bg-i.jpg",
+                "images/bgs/bg-v.jpg",
+                "images/bgs/bg-e.jpg"
+        )
+*/
+
+
+    </script>
+</div>
+
+<div id="nd-cycler">
+
+    <script type="text/javascript">
+        $('#nd-cycler').hide();
+    </script>
+
+    <img class="active" src="images/bgN_full.png" alt=""/>
+    <img src="images/bgN_letter.jpg" alt=""/>
+    <img src="images/bgA_letter.jpg" alt=""/>
+    <img src="images/bgT_letter.jpg" alt=""/>
+    <img src="images/bgI_letter.jpg" alt=""/>
+    <img src="images/bgV_letter.jpg" alt=""/>
+    <img src="images/bgE_letter.jpg" alt=""/>
+
+<!--
+
+    <img class="active" src="images/bgs/bg-n.jpg" alt=""/>
+    <img src="images/bgs/bg-n.jpg" alt=""/>
+    <img src="images/bgs/bg-a.jpg" alt=""/>
+    <img src="images/bgs/bg-t.jpg" alt=""/>
+    <img src="images/bgs/bg-i.jpg" alt=""/>
+    <img src="images/bgs/bg-v.jpg" alt=""/>
+    <img src="images/bgs/bg-e.jpg" alt=""/>
+-->
+    <img src="images/bgtitle.jpg" alt=""/>
+    <img src="images/bgtitlecaption.jpg" alt=""/>
+    <img src="images/bgbutton.jpg" id="end" alt=""/>
+
 
 </div>
-</center>
+
+<div id="nd-text">
+    <div class="nd-msg">
+        <h1></h1>
+    </div>
+</div>
+
 </body>
 </html>
